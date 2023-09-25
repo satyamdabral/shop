@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Harbor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="logo">Urban Harbor</h2>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="form-input mt-3">
+                        <input type="text" class="form-control" id="search-input" placeholder="Search for products">
+                        <button class="search-btn" id="search-button">Search</button>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon-list text-white">
+                        <i class="fa fa-heart-o"></i>
+                        <p>Your wishlist</p>
+                    </div>
+                    <div class="icon-list text-white">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p>Your cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div id="all-products"></div>
+                </div>
+                <div class="col-md-3 cart-main">
+                    <div class="cart" id="my-cart">
+                        <h1>My Cart</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Total Added Products:</th>
+                                    <td><span id="total-Products">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Price:</th>
+                                    <td>$<span id="price">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Delivery Charge:</th>
+                                    <td>$<span id="delivery-charge">20</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Total Tax:</th>
+                                    <td>$<span id="total-tax">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <td colspan="2">$<span id="total">0</span></td>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="parces text-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+

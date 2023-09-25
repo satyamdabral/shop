@@ -1,0 +1,219 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 89, 255, 0.479);
+    border-bottom: 3px solid lightgrey;
+    text-align: center;
+    transition: background-color 0.3s; 
+}
+
+.header:hover {
+    background-color: rgba(0, 89, 255, 0.8); 
+}
+
+.color {
+    color: #333;
+    font-size: 50px;
+}
+
+.search-btn:hover {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333; 
+}
+
+.logo {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.icon-list,
+.icon-list1 {
+    display: inline-block;
+    padding: 5px 26px 0px 18px;
+}
+
+.input-field {
+    display: flex;
+}
+
+.title {
+    padding: 10px;
+    margin: auto;
+    color: cadetblue;
+    text-align: center;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+#all-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.product-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.icon-color {
+    color: rgb(248, 183, 18);
+    font-size: small;
+}
+
+.icon-detail {
+    font-weight: bolder;
+}
+
+.product-price {
+    font-size: 25px;
+}
+
+.buy-now {
+    background-color: rgb(6, 6, 7);
+    color: white;
+    font-weight: bolder;
+}
+
+.rating {
+    color: rgb(201, 201, 201);
+}
+
+.fill-rate {
+    color: #fda500ed;
+}
+.single-product {
+    margin: 15px;
+    height: 475px;
+    padding: 10px;
+    background: linear-gradient(180deg, white, rgba(0, 20, 255, 0.1));
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px rgb(163, 161, 161);
+    transition: 0.3s ease; 
+    cursor: pointer;
+}
+
+.product-card {
+    margin: 15px;
+    height: 475px;
+    padding: 10px;
+    background: linear-gradient(180deg, white, rgba(0, 20, 255, 0.1));
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px rgb(163, 161, 161);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    box-shadow: 8px 8px 16px rgb(163, 161, 161);
+    background: linear-gradient(180deg, white, rgba(255, 0, 0, 0.1));
+}
+
+.product-card:hover .product-title,
+.product-card:hover .product-price {
+    background-color: #333; 
+    box-shadow: 2px 2px 4px rgb(73, 71, 71);
+}
+
+.product-card:hover .add-to-cart-btn {
+    background-color: #333;
+    color: white;
+}
+
+.buy-now:hover {
+    background-color: blue; 
+}
+
+.header:hover {
+    background-color: rgba(0, 89, 255, 0.95); 
+}
+.search-btn:hover {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: black; 
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.product-title {
+    font-size: large;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+.product-price {
+    font-size: 25px;
+    transition: color 0.3s; 
+}
+.buy-now {
+    background-color: rgb(6, 6, 7);
+    color: white;
+    font-weight: bolder;
+    transition: background-color 0.3s; 
+}
+
+.buy-now:hover {
+    background-color: #333; 
+}
+.cart {
+    background-color: rgba(255, 0, 0, 0.1);
+    width: 350px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+}
+
+.cart-main {
+    padding-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    #all-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart {
+        width: 300px;
+    }
+
+    .cart-main {
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    #all-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
